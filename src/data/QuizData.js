@@ -1,56 +1,56 @@
 const quizData = {
   earthquake: [
     {
-      question: "You're watching Netflix when suddenly your couch starts doing the macarena. What's your first move?",
+      question: "Your couch is shaking! What's your first move?",
       options: [
-        "Sprint outside screaming 'THE END IS NEAR!'",
-        "Drop, cover, and hold on to your snacks for dear life",
-        "Call your mom to say goodbye dramatically",
-        "Take a selfie with your shaking furniture for the 'gram"
+        "Run outside screaming",
+        "Drop, cover, and hold on",
+        "Call mom for a dramatic goodbye",
+        "Take a selfie with shaking furniture"
       ],
       correctAnswer: 1,
-      explanation: "Drop, cover, and hold on is actually the right move! Protect yourself first, your Netflix queue will still be there later."
+      explanation: "Drop, cover, and hold on is the right move! Netflix will still be there later."
     },
     {
-      question: "Your cat just knocked over a vase, but wait... it's actually an earthquake! Which spot is the WORST place to hide?",
+      question: "It's an earthquake! Which is the WORST hiding spot?",
       options: [
-        "Under your solid oak table",
-        "Next to your fancy glass display cabinet",
-        "In a doorway, superhero pose optional",
-        "Under your bed, where monsters can't get you"
+        "Under solid table",
+        "Next to glass cabinet",
+        "In doorway, superhero pose optional",
+        "Under bed, monster-free zone"
       ],
       correctAnswer: 1,
-      explanation: "Glass cabinets are earthquake's best friends - they'll shower you with sharp souvenirs. Stay away from windows and glass during shaky times!"
+      explanation: "Glass cabinets will shower you with sharp souvenirs. Avoid glass during earthquakes!"
     },
     {
       question: "Your earthquake emergency kit should definitely contain:",
       options: [
-        "Just some cool rocks to throw back at the earth",
-        "A single granola bar (earthquakes never last long, right?)",
-        "Water, food, first aid kit, flashlight, radio, and your comfort teddy bear",
-        "Your collection of earthquake documentaries for reference"
+        "Cool rocks to throw back at Earth",
+        "One granola bar (quakes are quick, right?)",
+        "Water, food, first aid, flashlight, radio",
+        "Earthquake documentaries for reference"
       ],
       correctAnswer: 2,
-      explanation: "A complete kit should have water, food, first aid supplies, flashlight, and radio. The teddy bear is optional but highly recommended for emotional support!"
+      explanation: "A complete kit needs water, food, first aid, flashlight and radio. Teddy bears optional!"
     },
     {
-      question: "The earthquake's over! Your apartment building is tilting like the Tower of Pisa. When should you go back in for your favorite coffee mug?",
+      question: "Your building's now leaning like Pisa. When grab your favorite mug?",
       options: [
-        "Immediately - that mug has sentimental value!",
-        "After professional inspectors say it's safe (boring but correct)",
-        "When your pizza delivery guy refuses to come upstairs",
-        "When your neighbor's cat goes in first (nature's canary)"
+        "Now - that mug is irreplaceable!",
+        "After inspectors say it's safe",
+        "When pizza delivery refuses to come up",
+        "Send neighbor's cat in first"
       ],
       correctAnswer: 1,
-      explanation: "Wait for the professionals! Your leaning tower of apartment might decide to fully commit to the Pisa aesthetic during an aftershock."
+      explanation: "Wait for professionals! Your apartment might go full Pisa during an aftershock."
     },
     {
-      question: "Your uncle shares a Facebook post about the 'triangle of life' earthquake survival method. What's the scientific consensus?",
+      question: "Is the 'triangle of life' earthquake method legit?",
       options: [
-        "It's a life-saving technique endorsed by all scientists everywhere",
-        "It's about as reliable as your horoscope - stick with drop, cover, and hold on",
-        "It only works if you form an actual triangle with your body",
-        "It's the official method taught by triangle salespeople"
+        "Yes! Scientists love it",
+        "Nope - stick with drop, cover, hold on",
+        "Only if you make a perfect triangle shape",
+        "Triangle salespeople swear by it"
       ],
       correctAnswer: 1,
       explanation: "The 'triangle of life' theory is not supported by earthquake safety experts. It's like using a chocolate teapot - sounds good, doesn't work. Stick with 'Drop, Cover, and Hold On'!"
@@ -58,56 +58,56 @@ const quizData = {
   ],
   fire: [
     {
-      question: "Your newest TikTok dance got a little too lit and now your outfit is on fire! What's your next viral move?",
+      question: "Your outfit caught fire during a TikTok dance! Now what?",
       options: [
-        "Run around the room screaming - the wind will blow it out!",
-        "Jump into your neighbor's pool (trespassing forgiven in emergencies)",
-        "Stop, drop, and roll like it's the hottest dance move of 2023",
-        "Take a fire selfie for your dating profile - 'Too hot to handle'"
+        "Run screaming - wind will blow it out!",
+        "Jump in neighbor's pool (emergency excuse)",
+        "Stop, drop, and roll like it's trending",
+        "Take fire selfie - 'Too hot to handle'"
       ],
       correctAnswer: 2,
-      explanation: "Stop, drop, and roll isn't just catchy - it actually works! The rolling smothers the flames by depriving them of oxygen. Plus, it'll get more views than your dance anyway."
+      explanation: "Stop, drop, and roll works! It smothers flames by cutting off oxygen. Plus, great views!"
     },
     {
-      question: "Your gaming room is suddenly smoky, and it's not from your friend's vape this time. How do you escape?",
+      question: "Gaming room's filled with smoke! How escape?",
       options: [
-        "Naruto run through the smoke as fast as possible",
-        "Channel your inner snake and slither below the smoke",
-        "Throw water at the smoke to clear a path",
-        "Use a leaf blower to push the smoke away"
+        "Naruto run through smoke",
+        "Crawl low under the smoke",
+        "Throw water at smoke",
+        "Use leaf blower as smoke shield"
       ],
       correctAnswer: 1,
-      explanation: "Smoke rises like your electricity bill, so the clearest air is near the floor. Crawl low to avoid smoke inhalation and find the exit."
+      explanation: "Smoke rises, so crawl low where air is clearer. Your lungs will thank you."
     },
     {
-      question: "Oh no! Your gaming PC is shooting sparks like a tiny rave! Which fire extinguisher should you grab?",
+      question: "PC shooting sparks! Which extinguisher type?",
       options: [
-        "Class A (Water) - fight technology with nature!",
-        "Class B (Foam) - computers love bubble baths",
-        "Class C (Carbon Dioxide or Dry Chemical) - the one actually designed for electrical fires",
-        "Class D (Metal) - fight fire with metal, like a rock concert"
+        "Class A (Water) - tech vs nature!",
+        "Class B (Foam) - PC bubble bath",
+        "Class C (CO2/Dry Chemical) - for electrical fires",
+        "Class D (Metal) - fight fire with metal"
       ],
       correctAnswer: 2,
-      explanation: "Class C extinguishers are made for electrical fires. Using water on electrical fires is like swimming during a thunderstorm - shocking results guaranteed!"
+      explanation: "Class C extinguishers are for electrical fires. Water + electricity = shocking results!"
     },
     {
-      question: "Before heading to dreamland each night, what's the #1 fire safety check that's more important than your phone's battery level?",
+      question: "Before bed, what's the #1 fire safety check?",
       options: [
-        "Make sure your selfie lighting is turned off",
-        "Hide all evidence of your midnight snack",
-        "Test that smoke detectors are working (yes, even when Netflix asks if you're still watching)",
-        "Check that your teddy bear is in fire-resistant pajamas"
+        "Turn off selfie lighting",
+        "Hide midnight snack evidence",
+        "Test smoke detectors are working",
+        "Dress teddy in fire-resistant PJs"
       ],
       correctAnswer: 2,
-      explanation: "Working smoke detectors are your midnight guardian angels. They can wake you up if there's a fire, even if you're dreaming about winning the lottery."
+      explanation: "Working smoke detectors are your guardian angels. They'll wake you from even lottery-winning dreams."
     },
     {
-      question: "You're trapped in your bedroom during a fire and your only company is your collection of rubber ducks. What's your best strategy?",
+      question: "Trapped in bedroom during fire. Best strategy?",
       options: [
-        "Use the rubber ducks to smash windows and leap dramatically to freedom",
-        "Hide under the bed - fire can't find what it can't see!",
-        "Wet towels under doors, call for help, wave from window like you're on a parade float",
-        "Attempt to fight fire with inspirational quotes about staying cool"
+        "Smash window with rubber ducks",
+        "Hide under bed - fire can't see you",
+        "Wet towels under door, signal from window",
+        "Fight fire with motivational quotes"
       ],
       correctAnswer: 2,
       explanation: "Seal the door with wet towels to block smoke, call for help, and signal your location from the window. The rubber ducks can provide emotional support."
@@ -115,56 +115,56 @@ const quizData = {
   ],
   flood: [
     {
-      question: "You're driving and spot what looks like a new swimming pool across the road. Should you:",
+      question: "Road ahead is flooded. Do you:",
       options: [
-        "Test if your car has secret submarine mode by driving through slowly",
-        "Remember the catchy phrase 'turn around, don't drown' and boringly follow it",
-        "Park and wade through - your new shoes are waterproof, right?",
-        "Wait for someone else to go first and take notes on their success/failure"
+        "Test car's submarine mode",
+        "Turn around, don't drown",
+        "Wade through - shoes are 'waterproof'",
+        "Let someone else test it first"
       ],
       correctAnswer: 1,
-      explanation: "Turn around, don't drown isn't just a cute rhyme. Just 6 inches of water can sweep you away, and your car isn't a submarine no matter what the dealer claimed."
+      explanation: "Just 6 inches of water can sweep you away. Your car isn't a submarine, despite dealer claims."
     },
     {
-      question: "There's a flood warning and your friend suggests you both go splash in the rising water. What's your response?",
+      question: "Friend wants to splash in flood waters. Your response?",
       options: [
-        "Pack your emergency kit and head for higher ground like a boring responsible adult",
-        "Fill your bathtub with water (for drinking later, not for your rubber ducky collection)",
-        "Agree! What could possibly go wrong with a little urban white-water rafting adventure?",
-        "Text everyone you know dramatic 'goodbye cruel world' messages just in case"
-      ],
-      correctAnswer: 2,
-      explanation: "Flood water is basically nature's mystery stew - full of debris, contaminants, and potential hazards. Just 6 inches of moving water can knock you down faster than rejection at prom."
-    },
-    {
-      question: "Your home just hosted an unwanted pool party courtesy of Mother Nature. What's your first move when returning?",
-      options: [
-        "Check if the house is still structurally sound or just a soggy cardboard box now",
-        "Start cleaning everything immediately with your favorite lavender-scented products",
-        "Flip on all the light switches to see what still works",
-        "Take artistic 'before' photos for your home renovation social media series"
+        "Head to higher ground (boring adult)",
+        "Fill bathtub with clean water",
+        "Agree! Urban rafting sounds fun!",
+        "Send dramatic goodbye texts just in case"
       ],
       correctAnswer: 0,
-      explanation: "Check the structure first! Your house might be playing Jenga with physics after a flood. No Instagram photo is worth a roof on your head."
+      explanation: "Flood water is nature's mystery stew - full of debris and contaminants. Just 6 inches can knock you down faster than prom rejection."
     },
     {
-      question: "During heavy rain, which of these is your cue to pack up and evacuate faster than leaving a bad date?",
+      question: "Home flooded. First step when returning?",
       options: [
-        "Your weather app shows little rain clouds for the entire week",
-        "Water rising faster than your anxiety during a job interview, or officials yelling 'GET OUT!'",
-        "Your cat looks worried about the weather",
-        "The basement has a small puddle (aka your new 'indoor water feature')"
+        "Check structural safety",
+        "Start cleaning with fancy products",
+        "Test all electrical switches",
+        "Take 'before' pics for social media"
+      ],
+      correctAnswer: 0,
+      explanation: "Check structure first! Your house might be playing Jenga with physics. No photo worth a roof on your head."
+    },
+    {
+      question: "When to evacuate during flooding?",
+      options: [
+        "Weather app shows week of rain",
+        "Fast-rising water or officials yelling 'GET OUT!'",
+        "Cat looks worried about weather",
+        "Small puddle in basement"
       ],
       correctAnswer: 1,
-      explanation: "If water is rising rapidly or authorities issue an evacuation order, it's time to make like a tree and leave. Your stuff can be replaced, but you're a limited edition human."
+      explanation: "When water rises fast or authorities say go, LEAVE! Your stuff is replaceable, you aren't."
     },
     {
-      question: "Your fridge went swimming during a flood. What's the fate of your food collection?",
+      question: "Fridge got flooded. Food status?",
       options: [
-        "Wash everything with soap - good as new!",
-        "Cook it all at nuclear temperatures to assassinate the germs",
-        "Say goodbye to it all, even those canned beans you've been saving since 2019",
-        "Sun-dry everything on your roof like apocalyptic jerky"
+        "Wash with soap - good as new!",
+        "Cook at nuclear temperatures",
+        "Trash it all, even ancient canned beans",
+        "Sun-dry everything like apocalypse jerky"
       ],
       correctAnswer: 2,
       explanation: "Floodwater is basically a backstage pass for bacteria and contaminants. If food touched floodwater, it's time for the trash can, not your mouth."
@@ -172,56 +172,56 @@ const quizData = {
   ],
   zombie: [
     {
-      question: "The zombie apocalypse has finally happened! Which skill makes you the main character and not the expendable friend?",
+      question: "Zombie apocalypse! Which skill makes you survive?",
       options: [
-        "Kung fu moves you learned from TikTok tutorials last week",
-        "First aid skills that don't involve Googling 'is this zombie bite infected?'",
-        "The ability to convincingly play dead (those theater classes finally useful!)",
-        "Managing your apocalypse Instagram - #SurvivingInStyle #ZombieBae #Brains"
+        "TikTok kung fu moves",
+        "Actual first aid skills",
+        "Playing dead convincingly",
+        "Managing apocalypse Instagram"
       ],
       correctAnswer: 1,
-      explanation: "In any apocalypse (zombie or otherwise), being able to patch up wounds makes you the VIP of any survivor group. Plus, the zombies already have the 'playing dead' skill mastered - don't try to outdo them at their specialty."
+      explanation: "First aid makes you the VIP of any survivor group. Zombies already mastered 'playing dead' - don't compete."
     },
     {
-      question: "You've got 5 minutes to raid a store during the zombie apocalypse. Your priority shopping list should start with:",
+      question: "5-minute store raid during zombie outbreak. Grab?",
       options: [
-        "Baseball bats and other zombie-bonking implements",
-        "The latest iPhone (zombies can't FaceTime... yet)",
-        "Water bottles and canned food that will taste terrible but keep you alive",
-        "Zombie repellent (located next to the unicorn food in aisle never)"
+        "Baseball bats for zombie-bonking",
+        "Latest iPhone (zombies can't text)",
+        "Water and canned food",
+        "Zombie repellent (aisle: never)"
       ],
       correctAnswer: 2,
-      explanation: "Water and food first! You can only survive about 3 days without water, but zombies will wander around for years. Your stomach doesn't care about the apocalypse, it still wants dinner."
+      explanation: "Water and food first! You'll die of thirst in 3 days, while zombies wander for years."
     },
     {
-      question: "Your best friend just got bitten by a zombie. What's the proper friendship protocol?",
+      question: "BFF got zombie-bit. Friendship protocol?",
       options: [
-        "Group hug! Friendship conquers all, even zombie viruses!",
-        "Take selfies together while you still can, #LastSelfieEver #ZombieBFF",
-        "Tearful goodbye, then separate ways (you running faster than them)",
-        "Lock them in a room with a PlayStation and snacks for their final hours"
+        "Group hug! Friendship beats viruses!",
+        "Final selfies #ZombieBFF",
+        "Tearful goodbye, then run",
+        "PlayStation and snacks for their last hours"
       ],
       correctAnswer: 2,
-      explanation: "As heartbreaking as it is, separation is necessary. In zombie scenarios, bites are basically a delayed death sentence with extra teeth. True friendship sometimes means running away very, very fast."
+      explanation: "Separation necessary. Zombie bites = delayed death sentence with extra teeth. True friendship sometimes means running away fast."
     },
     {
-      question: "What's the WORST zombie apocalypse shelter location?",
+      question: "WORST zombie shelter location?",
       options: [
-        "An island (zombies can't swim... probably)",
-        "A shopping mall (worked in the movies, right?)",
-        "A prison (secure, defensible, depressing decor)",
-        "A popular amusement park (plenty of hiding spots among the mascots!)"
+        "Island (zombies can't swim...maybe)",
+        "Shopping mall (worked in movies)",
+        "Prison (secure but depressing)",
+        "Amusement park (mascot hiding spots!)"
       ],
       correctAnswer: 3,
-      explanation: "Amusement parks will be neither amusing nor empty during an apocalypse. Plus, have you SEEN how creepy those mascot costumes are? You won't know if it's a zombie or just Mickey until it's too late."
+      explanation: "Amusement parks: crowded and mascots hide zombies. Can't tell if it's zombie or Mickey until too late."
     },
     {
-      question: "Plot twist: The CDC actually has a zombie preparedness guide! What's their REAL sneaky purpose with this guide?",
+      question: "CDC has a zombie guide! Their real purpose?",
       options: [
-        "Teaching proper zombie combat techniques (aim for the head!)",
-        "Tricking you into learning actual useful emergency prep for boring real disasters",
-        "Confirming that the government knows zombies are coming",
-        "Testing which citizens would survive based on who downloads the guide"
+        "Teaching zombie combat (headshots!)",
+        "Sneaky real disaster prep education",
+        "Government knows zombies are coming",
+        "Identifying survivors by downloads"
       ],
       correctAnswer: 1,
       explanation: "The CDC cleverly used zombies as a teaching tool to get people interested in actual disaster preparedness. They figured 'hurricane readiness' doesn't go viral, but 'zombie survival' does!"
@@ -233,56 +233,56 @@ const quizData = {
       options: [
         "Speaking Klingon (universal translator might come in handy)",
         "Having an emergency kit with food, water, and supplies (universal survival hack)",
-        "Knowing constellation names to navigate and impress our new overlords",
+      question: "Aliens landed! Which skill works for ALL emergencies?",
         "Tinfoil hat crafting techniques (blocks mind control AND makes fashionable headwear)"
-      ],
-      correctAnswer: 1,
-      explanation: "A good emergency kit works for hurricanes, blizzards, AND alien invasions! Aliens might have ray guns, but they can't zap away the value of being prepared with supplies!"
-    },
+        "Speaking Klingon",
+        "Emergency kit with supplies",
+        "Constellation navigation skills",
+        "Tinfoil hat crafting"
     {
       question: "The aliens knocked out all technology! How will you get updates on the invasion without Instagram?",
-      options: [
+      explanation: "Emergency kits work for hurricanes, blizzards AND aliens! Ray guns can't zap away good preparation."
         "Check your phone every 5 seconds hoping the alien-proof 6G kicks in",
         "Refresh Twitter to see if #AlienInvasion or #WeAreDoomed is trending yet",
-        "Use that ancient emergency radio your grandparents gave you (the one with actual buttons)",
+      question: "Aliens killed all tech! How get invasion updates?",
         "Look out the window and count how many flying saucers you see (more than 3 = bad news)"
-      ],
-      correctAnswer: 2,
-      explanation: "Radio is the cockroach of communication technologies - nearly impossible to completely eliminate. When fancy digital systems fail, basic radio often still works. The aliens always forget about radio!"
-    },
+        "Check phone obsessively",
+        "Refresh Twitter for #AlienInvasion",
+        "Use emergency radio with buttons",
+        "Count flying saucers from window"
     {
       question: "You've captured an alien! What's your first question?",
-      options: [
+      explanation: "Radio is the cockroach of tech - impossible to kill. Aliens always forget about radio!"
         "\"Are you going to eat me? Just checking for meal planning purposes\"",
         "\"Can I see your spaceship? I've always wanted to take a selfie in one\"",
-        "\"What are your intentions on Earth?\" (boring but practical)",
+      question: "You caught an alien! First question?",
         "\"Do you have TikTok where you come from?\""
-      ],
-      correctAnswer: 2,
-      explanation: "While asking about alien TikTok dances would be fascinating, knowing their intentions might help you plan your survival strategy a bit better. But let's be honest - they probably do have TikTok."
-    },
+        "\"Planning to eat me?\"",
+        "\"Spaceship selfie tour?\"",
+        "\"What are your Earth intentions?\"",
+        "\"Got alien TikTok?\""
     {
       question: "An alien offers you a ride in their spaceship. What's the smart move?",
-      options: [
+      explanation: "Knowing their intentions helps survival planning. But they probably do have TikTok."
         "Accept immediately! Space tourism usually costs millions!",
         "Politely decline and ask for their space business card instead",
-        "Insist on bringing your emotional support goldfish with you",
+      question: "Alien offers spaceship ride. Smart move?",
         "Tell them you'll consider it after checking their spacecraft's safety rating online"
-      ],
-      correctAnswer: 1,
-      explanation: "Getting into strange vehicles with beings you just met is inadvisable, regardless of the planet they're from. Stranger danger applies across the galaxy!"
-    },
+        "Accept! Free space tourism!",
+        "Politely decline, ask for card",
+        "Bring emotional support goldfish",
+        "Check spacecraft safety ratings first"
     {
       question: "The aliens are broadcasting mind-control beams! How will you get reliable emergency information?",
-      options: [
+      explanation: "Strange vehicles + unknown beings = bad idea, regardless of planet origin. Galactic stranger danger!"
         "Check Twitter - alien overlords are probably verified users by now",
         "Call your friend who believes in conspiracy theories - they've been preparing for this",
-        "Listen to boring official emergency broadcasts and alerts from authorities",
+      question: "Aliens broadcasting mind-control! Get reliable info how?",
         "Look out your window and count the number of flying saucers to gauge threat level"
-      ],
-      correctAnswer: 2,
-      explanation: "Radio is the cockroach of communication technologies - nearly impossible to completely eliminate. When fancy digital systems fail, basic radio often still works. The aliens always forget about radio!"
-    },
+        "Check Twitter - aliens verified yet?",
+        "Call conspiracy theory friend",
+        "Listen to official emergency broadcasts",
+        "Count flying saucers from window"
     {
       question: "The REAL reason the government wants you to have emergency supplies is:",
       options: [
@@ -291,10 +291,10 @@ const quizData = {
         "Because the emergency snack industry has powerful lobbyists",
         "To have something to trade with your neighbors for their better emergency supplies"
       ],
-      correctAnswer: 1,
-      explanation: "Emergency supplies help you be self-sufficient when normal services take a vacation during disasters. Even if the disaster is just your DoorDash driver getting abducted by aliens."
-    }
-  ]
+        "Preparing us for aliens secretly",
+        "Prevent emergency DoorDash orders",
+        "Emergency snack lobbyists are powerful",
+        "Trading with neighbors who prepped better"
 };
 
-export default quizData;
+      explanation: "Self-sufficiency when services fail during disasters. Even when your DoorDash driver gets abducted."
