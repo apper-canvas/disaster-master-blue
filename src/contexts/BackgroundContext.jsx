@@ -69,16 +69,22 @@ export const BackgroundProvider = ({ children }) => {
   };
 
   const changeBackground = (disasterId) => {
+    // Prevent unnecessary updates if the background isn't changing
+    if (disasterId === currentBackground) {
+      return;
+    }
+    
     setIsTransitioning(true);
     setTimeout(() => {
       // Handle the case where we want to clear the background (going back to home)
       if (disasterId === null || disasterId === 'home') {
         document.body.classList.remove('disaster-mode');
       }
+      // Update both states together to prevent potential re-render issues
       setCurrentBackground(disasterId);
+      setThemeAnimations(disasterId ? themeData[disasterId] : null);
       setIsTransitioning(false);
     }, 300);
-    setThemeAnimations(disasterId ? themeData[disasterId] : null);
   };
 
   return (
