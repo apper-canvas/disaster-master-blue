@@ -165,6 +165,20 @@ const QuizPage = () => {
       exit="out"
       variants={pageVariants}
     >
+      <motion.button
+        onClick={() => navigate('/')}
+        className="fixed top-4 left-4 z-50 p-2 rounded-full bg-surface-200 dark:bg-surface-700 hover:bg-surface-300 dark:hover:bg-surface-600 transition-colors shadow-lg"
+        aria-label="Go to home page"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ type: 'spring', damping: 12 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <ApperIcon name="Home" className="h-6 w-6 text-surface-800 dark:text-surface-100" />
+      </motion.button>
+      
+      
       <div className="relative z-10 max-w-4xl mx-auto bg-white/90 dark:bg-surface-800/90 rounded-xl p-6 sm:p-8 shadow-lg backdrop-blur-sm min-h-[500px]">
         <div className="flex items-center mb-6">
           <motion.div 
