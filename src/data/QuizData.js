@@ -117,8 +117,8 @@ const quizData = {
     {
       question: "You're driving and spot what looks like a new swimming pool across the road. Should you:",
       options: [
-        "Test if your car has secret boat mode by driving through slowly",
-        "Remember the catchy phrase 'turn around, don't drown' and actually follow it",
+        "Test if your car has secret submarine mode by driving through slowly",
+        "Remember the catchy phrase 'turn around, don't drown' and boringly follow it",
         "Park and wade through - your new shoes are waterproof, right?",
         "Wait for someone else to go first and take notes on their success/failure"
       ],
@@ -128,10 +128,10 @@ const quizData = {
     {
       question: "There's a flood warning and your friend suggests you both go splash in the rising water. What's your response?",
       options: [
-        "Pack your emergency kit and head for higher ground",
-        "Fill your bathtub with water (for later use, not for recreational swimming)",
-        "Agree! What could possibly go wrong with a little urban white-water adventure?",
-        "Turn on emergency broadcasts instead of your usual true crime podcast"
+        "Pack your emergency kit and head for higher ground like a boring responsible adult",
+        "Fill your bathtub with water (for drinking later, not for your rubber ducky collection)",
+        "Agree! What could possibly go wrong with a little urban white-water rafting adventure?",
+        "Text everyone you know dramatic 'goodbye cruel world' messages just in case"
       ],
       correctAnswer: 2,
       explanation: "Flood water is basically nature's mystery stew - full of debris, contaminants, and potential hazards. Just 6 inches of moving water can knock you down faster than rejection at prom."
@@ -172,15 +172,15 @@ const quizData = {
   ],
   zombie: [
     {
-      question: "The zombie apocalypse has finally happened! Which skill makes you the main character and not the one who dies in the first episode?",
+      question: "The zombie apocalypse has finally happened! Which skill makes you the main character and not the expendable friend?",
       options: [
-        "Kung fu moves you learned from YouTube tutorials",
-        "First aid skills that don't involve WebMD diagnosing everyone with zombie-itis",
-        "The ability to convincingly play dead (acting classes finally useful!)",
-        "Managing your apocalypse Instagram - #ZombieLife #NoFilter #Brains"
+        "Kung fu moves you learned from TikTok tutorials last week",
+        "First aid skills that don't involve Googling 'is this zombie bite infected?'",
+        "The ability to convincingly play dead (those theater classes finally useful!)",
+        "Managing your apocalypse Instagram - #SurvivingInStyle #ZombieBae #Brains"
       ],
       correctAnswer: 1,
-      explanation: "In any apocalypse (zombie or otherwise), being able to patch up wounds and know basic medical care makes you the VIP of any survivor group. Plus, the zombies already have the 'playing dead' skill mastered."
+      explanation: "In any apocalypse (zombie or otherwise), being able to patch up wounds makes you the VIP of any survivor group. Plus, the zombies already have the 'playing dead' skill mastered - don't try to outdo them at their specialty."
     },
     {
       question: "You've got 5 minutes to raid a store during the zombie apocalypse. Your priority shopping list should start with:",
@@ -194,6 +194,28 @@ const quizData = {
       explanation: "Water and food first! You can only survive about 3 days without water, but zombies will wander around for years. Your stomach doesn't care about the apocalypse, it still wants dinner."
     },
     {
+      question: "Your best friend just got bitten by a zombie. What's the proper friendship protocol?",
+      options: [
+        "Group hug! Friendship conquers all, even zombie viruses!",
+        "Take selfies together while you still can, #LastSelfieEver #ZombieBFF",
+        "Tearful goodbye, then separate ways (you running faster than them)",
+        "Lock them in a room with a PlayStation and snacks for their final hours"
+      ],
+      correctAnswer: 2,
+      explanation: "As heartbreaking as it is, separation is necessary. In zombie scenarios, bites are basically a delayed death sentence with extra teeth. True friendship sometimes means running away very, very fast."
+    },
+    {
+      question: "What's the WORST zombie apocalypse shelter location?",
+      options: [
+        "An island (zombies can't swim... probably)",
+        "A shopping mall (worked in the movies, right?)",
+        "A prison (secure, defensible, depressing decor)",
+        "A popular amusement park (plenty of hiding spots among the mascots!)"
+      ],
+      correctAnswer: 3,
+      explanation: "Amusement parks will be neither amusing nor empty during an apocalypse. Plus, have you SEEN how creepy those mascot costumes are? You won't know if it's a zombie or just Mickey until it's too late."
+    },
+    {
       question: "Plot twist: The CDC actually has a zombie preparedness guide! What's their REAL sneaky purpose with this guide?",
       options: [
         "Teaching proper zombie combat techniques (aim for the head!)",
@@ -203,28 +225,6 @@ const quizData = {
       ],
       correctAnswer: 1,
       explanation: "The CDC cleverly used zombies as a teaching tool to get people interested in actual disaster preparedness. They figured 'hurricane readiness' doesn't go viral, but 'zombie survival' does!"
-    },
-    {
-      question: "Where should you definitely NOT make your zombie apocalypse hideout?",
-      options: [
-        "A remote farmhouse with its own well (classic horror movie setting)",
-        "A boat named 'Zombie-Free Zone' (they can't swim... right?)",
-        "Shopping mall food court (great sales, terrible survival odds)",
-        "Mountain cabin where no one can hear you scream (wait...)"
-      ],
-      correctAnswer: 2,
-      explanation: "Crowded places are zombie buffets! In any outbreak - zombie or real diseases - avoiding crowds reduces your chances of joining the infected. Plus, mall food courts were already scary before zombies."
-    },
-    {
-      question: "Your phone has 2% battery left during the zombie apocalypse. What's your best communication plan?",
-      options: [
-        "Use it to post one final perfect selfie #ZombieApocalypseLook",
-        "Grab that weird hand-crank radio your prepper uncle gave you last Christmas",
-        "Scream loudly so potential rescuers can find you (and zombies too!)",
-        "Practice zombie groans to communicate with your new undead friends"
-      ],
-      correctAnswer: 1,
-      explanation: "Hand-crank radios don't need charging and can receive emergency broadcasts when cellular networks become as dead as the zombies. Plus, the cranking motion is good stress relief!"
     }
   ],
   alien: [
@@ -232,8 +232,8 @@ const quizData = {
       question: "Aliens have landed! Which survival skill might actually work for both extraterrestrial invasions AND boring Earth emergencies?",
       options: [
         "Speaking Klingon (universal translator might come in handy)",
-        "Having an emergency kit with food, water, and supplies (aliens gotta respect preparation)",
-        "Knowing constellation names to impress our new overlords",
+        "Having an emergency kit with food, water, and supplies (universal survival hack)",
+        "Knowing constellation names to navigate and impress our new overlords",
         "Tinfoil hat crafting techniques (blocks mind control AND makes fashionable headwear)"
       ],
       correctAnswer: 1,
@@ -243,9 +243,42 @@ const quizData = {
       question: "The aliens knocked out all technology! How will you get updates on the invasion without Instagram?",
       options: [
         "Check your phone every 5 seconds hoping the alien-proof 6G kicks in",
-        "Refresh Twitter to see if #AlienInvasion is trending yet",
-        "Dust off that emergency radio that still uses actual buttons",
-        "Develop telepathy through sheer panic and necessity"
+        "Refresh Twitter to see if #AlienInvasion or #WeAreDoomed is trending yet",
+        "Use that ancient emergency radio your grandparents gave you (the one with actual buttons)",
+        "Look out the window and count how many flying saucers you see (more than 3 = bad news)"
+      ],
+      correctAnswer: 2,
+      explanation: "Radio is the cockroach of communication technologies - nearly impossible to completely eliminate. When fancy digital systems fail, basic radio often still works. The aliens always forget about radio!"
+    },
+    {
+      question: "You've captured an alien! What's your first question?",
+      options: [
+        "\"Are you going to eat me? Just checking for meal planning purposes\"",
+        "\"Can I see your spaceship? I've always wanted to take a selfie in one\"",
+        "\"What are your intentions on Earth?\" (boring but practical)",
+        "\"Do you have TikTok where you come from?\""
+      ],
+      correctAnswer: 2,
+      explanation: "While asking about alien TikTok dances would be fascinating, knowing their intentions might help you plan your survival strategy a bit better. But let's be honest - they probably do have TikTok."
+    },
+    {
+      question: "An alien offers you a ride in their spaceship. What's the smart move?",
+      options: [
+        "Accept immediately! Space tourism usually costs millions!",
+        "Politely decline and ask for their space business card instead",
+        "Insist on bringing your emotional support goldfish with you",
+        "Tell them you'll consider it after checking their spacecraft's safety rating online"
+      ],
+      correctAnswer: 1,
+      explanation: "Getting into strange vehicles with beings you just met is inadvisable, regardless of the planet they're from. Stranger danger applies across the galaxy!"
+    },
+    {
+      question: "The aliens are broadcasting mind-control beams! How will you get reliable emergency information?",
+      options: [
+        "Check Twitter - alien overlords are probably verified users by now",
+        "Call your friend who believes in conspiracy theories - they've been preparing for this",
+        "Listen to boring official emergency broadcasts and alerts from authorities",
+        "Look out your window and count the number of flying saucers to gauge threat level"
       ],
       correctAnswer: 2,
       explanation: "Radio is the cockroach of communication technologies - nearly impossible to completely eliminate. When fancy digital systems fail, basic radio often still works. The aliens always forget about radio!"
@@ -260,28 +293,6 @@ const quizData = {
       ],
       correctAnswer: 1,
       explanation: "Emergency supplies help you be self-sufficient when normal services take a vacation during disasters. Even if the disaster is just your DoorDash driver getting abducted by aliens."
-    },
-    {
-      question: "Which of these is an actual FEMA recommendation and not something from a sci-fi movie?",
-      options: [
-        "Build a laser defense system on your roof",
-        "Construct an underground bunker with alien-proof doors",
-        "Have a family emergency meeting plan that doesn't involve telepathy",
-        "Train your pets to detect non-human lifeforms"
-      ],
-      correctAnswer: 2,
-      explanation: "FEMA actually recommends having a family communication plan so everyone knows where to meet if separated. Alien invasions, hurricanes, or just a really big sale at the mall - a meeting plan works for all!"
-    },
-    {
-      question: "The aliens are broadcasting mind-control beams! How will you get reliable emergency information?",
-      options: [
-        "Check Twitter - alien overlords are probably verified users by now",
-        "Call your friend who believes in conspiracy theories - they've been preparing for this",
-        "Listen to boring official emergency broadcasts and alerts from authorities",
-        "Look out your window and count the number of flying saucers to gauge threat level"
-      ],
-      correctAnswer: 2,
-      explanation: "Official emergency broadcasts exist for exactly these situations (well, minus the aliens part). They provide vetted information when social media is full of alien selfies and misinformation."
     }
   ]
 };

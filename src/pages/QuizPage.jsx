@@ -114,15 +114,32 @@ const QuizPage = () => {
   };
   
   // Get the appropriate message based on score
+  const getSurvivalStatus = () => {
+    const percentage = (score / questions.length) * 100;
+    let survived = false;
+    let message = "";
+    
+    if (percentage >= 80) {
+      survived = true;
+      message = "You survived! Your disaster knowledge kept you alive and thriving.";
+    } else if (percentage >= 60) {
+      survived = true;
+      message = "You survived... barely! You're injured but you'll live to tell the tale.";
+    } else {
+      survived = false;
+      message = "You didn't make it. Your disaster decisions led to an unfortunate end.";
+    }
+    
+    return { survived, message };
+  };
+  
+  // Get the appropriate message based on score
   const getResultMessage = () => {
     const percentage = (score / questions.length) * 100;
-    if (percentage >= 80) {
-      return "Excellent! You're well prepared for this disaster scenario.";
-    } else if (percentage >= 60) {
-      return "Good job! You have a solid understanding of disaster preparedness.";
-    } else {
-      return "There's room for improvement. Consider learning more about disaster preparedness.";
-    }
+    if (percentage >= 80) return "Excellent! You're well prepared for this disaster scenario.";
+    if (percentage >= 60) return "Good job! You have a solid understanding of disaster preparedness.";
+    
+    return "There's room for improvement. Consider learning more about disaster preparedness.";
   };
   
   return (
@@ -222,13 +239,30 @@ const QuizPage = () => {
             >
               <h2 className="text-2xl font-bold mb-6 text-center">Quiz Results</h2>
               
+              {/* Survival Status Display */}
+              <div className={`mb-8 p-6 rounded-xl text-center ${
+                getSurvivalStatus().survived 
+                  ? 'bg-green-100 dark:bg-green-900/30 border-2 border-green-500' 
+                  : 'bg-red-100 dark:bg-red-900/30 border-2 border-red-500'
+              }`}>
+                <motion.div 
+                  className="text-6xl mb-4 mx-auto"
+                  initial={{ scale: 0.5, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ type: 'spring', damping: 8 }}
+                >
+                  {getSurvivalStatus().survived ? '😎' : '💀'}
+                </motion.div>
+                <h3 className="text-2xl font-bold mb-2">
+                  {getSurvivalStatus().survived ? 'YOU\'RE ALIVE!' : 'YOU\'RE DEAD!'}
+                </h3>
+                <p className="text-lg">{getSurvivalStatus().message}</p>
+              </div>
+              
               <div className="text-center mb-8">
                 <div className="text-5xl font-bold mb-2 text-secondary-dark dark:text-secondary-light">
                   {score} / {questions.length}
                 </div>
-                <p className="text-lg text-surface-600 dark:text-surface-300">
-                  {getResultMessage()}
-                </p>
               </div>
               
               <div className="space-y-6 mb-8">
