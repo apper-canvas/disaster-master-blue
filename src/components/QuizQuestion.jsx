@@ -60,18 +60,18 @@ const QuizQuestion = ({ question, options, onAnswer, questionNumber, totalQuesti
         )}
       </AnimatePresence>
       <div className="mb-4 relative z-10">
-        <div className="text-sm font-medium text-surface-500 dark:text-surface-400 mb-2">
-            Question {questionNumber} of {totalQuestions}
-        </div>
+          <div className="text-sm font-medium text-surface-500 dark:text-surface-400 mb-2">
+              Question {questionNumber} of {totalQuestions}
+          </div>
           <span className="text-sm font-medium text-surface-500 dark:text-surface-400">
             {Math.round((questionNumber / totalQuestions) * 100)}% Complete
           </span>
-        </div>
-        <div className="w-full bg-surface-200 dark:bg-surface-700 rounded-full h-2.5">
-          <div 
-            className="bg-secondary h-2.5 rounded-full transition-all duration-300 ease-in-out"
-            style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
-          ></div>
+          <div className="w-full bg-surface-200 dark:bg-surface-700 rounded-full h-2.5 mt-2">
+            <div 
+              className="bg-secondary h-2.5 rounded-full transition-all duration-300 ease-in-out"
+              style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
+            ></div>
+          </div>
       </div>
       <h3 className="text-xl font-bold mb-6">{question}</h3>
       
