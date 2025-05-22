@@ -81,6 +81,19 @@ export default {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(100vh)' }
         },
+        'float-bounce': {
+          '0%, 100%': { transform: 'translateY(0) scale(1)' },
+          '50%': { transform: 'translateY(-15px) scale(1.05)' }
+        },
+        drift: {
+          '0%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '50%': { transform: 'translate(15px, 10px) rotate(5deg)' },
+          '100%': { transform: 'translate(0, 0) rotate(0deg)' }
+        },
+        'pulse-ring': {
+          '0%, 100%': { transform: 'scale(0.8)', opacity: 0 },
+          '50%': { transform: 'scale(1.2)', opacity: 0.6 }
+        },
         rise: {
           '0%': { transform: 'translateY(100vh)' },
           '100%': { transform: 'translateY(-100%)' }
@@ -129,7 +142,14 @@ export default {
         // General animations
         'fade-in-out': 'fadeInOut 2s ease-in-out infinite',
         'float-slow': 'float 6s ease-in-out infinite',
+        'float-med': 'float 4s ease-in-out infinite',
         'sway-slow': 'sway 6s ease-in-out infinite',
+        
+        // Home page theme animations
+        'float-bounce': 'float-bounce 6s ease-in-out infinite',
+        'float-bounce-slow': 'float-bounce 8s ease-in-out infinite',
+        'drift': 'drift 12s ease-in-out infinite',
+        'pulse-ring': 'pulse-ring 4s ease-out infinite',
       }
     }
   },

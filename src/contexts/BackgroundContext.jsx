@@ -20,6 +20,15 @@ export const BackgroundProvider = ({ children }) => {
 
   // Theme-specific animation data
   const themeData = {
+    home: {
+      primaryAnimation: 'float-bounce',
+      secondaryAnimation: 'drift',
+      particleColor: '#457B9D',
+      accentColor: '#E63946',
+      iconAnimation: 'pulse',
+      particleType: 'geometric',
+      backgroundStyle: 'bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-800 dark:to-surface-900'
+    },
     earthquake: {
       primaryAnimation: 'shake-slow',
       secondaryAnimation: 'debris-fall',
@@ -65,6 +74,10 @@ export const BackgroundProvider = ({ children }) => {
   const changeBackground = (disasterId) => {
     setIsTransitioning(true);
     setTimeout(() => {
+      // Handle the case where we want to clear the background (going back to home)
+      if (disasterId === null || disasterId === 'home') {
+        document.body.classList.remove('disaster-mode');
+      }
       setCurrentBackground(disasterId);
       setIsTransitioning(false);
     }, 300);
