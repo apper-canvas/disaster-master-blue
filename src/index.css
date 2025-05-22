@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+}
+
+body {
+  @apply bg-surface-50 dark:bg-surface-900 text-surface-900 dark:text-surface-50;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading font-bold;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.disaster-card {
+  @apply relative overflow-hidden rounded-2xl transition-all duration-300;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.disaster-card:before {
+  content: "";
+  @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+}
+
+.disaster-card:hover:before {
+  @apply opacity-30;
+}
+
+.disaster-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Disaster theme backgrounds */
+.disaster-earthquake {
+  background: linear-gradient(45deg, #814A19, #C46A34);
+}
+
+.disaster-fire {
+  background: linear-gradient(45deg, #E63946, #FFB001);
+}
+
+.disaster-flood {
+  background: linear-gradient(45deg, #1A759F, #76C893);
+}
+
+.disaster-zombie {
+  background: linear-gradient(45deg, #6A994E, #386641);
+}
+
+.disaster-alien {
+  background: linear-gradient(45deg, #7209B7, #3F37C9);
+}
