@@ -5,23 +5,8 @@ import { AnimatePresence } from 'framer-motion';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import QuizPage from './pages/QuizPage';
 import { BackgroundProvider } from './contexts/BackgroundContext';
-
-// Mock Quiz Page component until we build the real one
-const QuizPage = () => {
-  const params = new URLSearchParams(window.location.search);
-  const disasterType = params.get('type');
-  
-  return (
-    <div className="container relative z-10 mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Disaster Quiz: {disasterType}</h1>
-      <p className="text-lg">Quiz questions for {disasterType} scenario will appear here.</p>
-      <a href="/" className="inline-block mt-6 bg-primary px-4 py-2 rounded-lg text-white hover:bg-primary-dark transition">
-        Back to Home
-      </a>
-    </div>
-  );
-};
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);

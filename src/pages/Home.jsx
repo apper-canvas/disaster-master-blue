@@ -81,9 +81,3 @@ const Home = () => {
 };
 
 export default Home;
-      </footer>
-    </div>
-  );
-};
-
-export default Home;
