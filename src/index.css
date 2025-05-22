@@ -71,5 +71,85 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .disaster-alien {
-  background: linear-gradient(45deg, #7209B7, #3F37C9);
+  background: linear-gradient(45deg, #7209B7, #3F37C9); 
+}
+
+/* Enhanced background styles with images */
+.bg-disaster-base {
+  @apply absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-500;
+}
+
+.bg-disaster-overlay {
+  @apply absolute inset-0 z-0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+}
+
+.bg-disaster-earthquake {
+  @apply bg-disaster-base;
+  background-image: url('/images/earthquake-bg.jpg');
+}
+
+.bg-disaster-earthquake::before {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(rgba(129, 74, 25, 0.7), rgba(196, 106, 52, 0.7));
+  z-index: 1;
+}
+
+.bg-disaster-fire {
+  @apply bg-disaster-base;
+  background-image: url('/images/fire-bg.jpg');
+}
+
+.bg-disaster-fire::before {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(rgba(230, 57, 70, 0.7), rgba(255, 176, 1, 0.7));
+  z-index: 1;
+}
+
+.bg-disaster-flood {
+  @apply bg-disaster-base;
+  background-image: url('/images/flood-bg.jpg');
+}
+
+.bg-disaster-flood::before {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(rgba(26, 117, 159, 0.7), rgba(118, 200, 147, 0.7));
+  z-index: 1;
+}
+
+.bg-disaster-zombie {
+  @apply bg-disaster-base;
+  background-image: url('/images/zombie-bg.jpg');
+}
+
+.bg-disaster-zombie::before {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(rgba(106, 153, 78, 0.7), rgba(56, 102, 65, 0.7));
+  z-index: 1;
+}
+
+.bg-disaster-alien {
+  @apply bg-disaster-base;
+  background-image: url('/images/alien-bg.jpg');
+}
+
+.bg-disaster-alien::before {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(rgba(114, 9, 183, 0.7), rgba(63, 55, 201, 0.7));
+  z-index: 1;
+}
+
+/* Fade transition for background changes */
+.bg-transition-enter {
+  opacity: 0;
+}
+
+.bg-transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
 }

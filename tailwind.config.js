@@ -44,6 +44,17 @@ export default {
       borderRadius: {
         'xl': '0.75rem',
         '2xl': '1rem'
+      },
+      backgroundImage: {
+        'earthquake': "url('/images/earthquake-bg.jpg')",
+        'fire': "url('/images/fire-bg.jpg')",
+        'flood': "url('/images/flood-bg.jpg')",
+        'zombie': "url('/images/zombie-bg.jpg')",
+        'alien': "url('/images/alien-bg.jpg')"
+      },
+      animation: {
+        'xl': '0.75rem',
+        '2xl': '1rem'
       }
     }
   },

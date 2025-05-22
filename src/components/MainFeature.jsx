@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { toast } from 'react-toastify';
 import ApperIcon from './ApperIcon';
+import { useBackground } from '../contexts/BackgroundContext';
 
 const disasterTypes = [
   {
@@ -9,35 +10,40 @@ const disasterTypes = [
     name: 'Earthquake',
     icon: 'Mountain',
     description: 'Test your knowledge about earthquake safety and preparedness.',
-    className: 'disaster-earthquake'
+    className: 'disaster-earthquake',
+    bgClass: 'bg-disaster-earthquake'
   },
   {
     id: 'fire',
     name: 'Fire',
     icon: 'Flame',
     description: 'Learn how to prevent and respond to fires in various settings.',
-    className: 'disaster-fire'
+    className: 'disaster-fire',
+    bgClass: 'bg-disaster-fire'
   },
   {
     id: 'flood',
     name: 'Flood',
     icon: 'Droplets',
     description: 'Discover critical flood safety measures and evacuation procedures.',
-    className: 'disaster-flood'
+    className: 'disaster-flood',
+    bgClass: 'bg-disaster-flood'
   },
   {
     id: 'zombie',
     name: 'Zombie Outbreak',
     icon: 'Skull',
     description: 'A fun yet educational take on survival and emergency preparedness.',
-    className: 'disaster-zombie'
+    className: 'disaster-zombie',
+    bgClass: 'bg-disaster-zombie'
   },
   {
     id: 'alien',
     name: 'Alien Invasion',
     icon: 'Rocket',
     description: 'Creative scenario teaching adaptability and resource management.',
-    className: 'disaster-alien'
+    className: 'disaster-alien',
+    bgClass: 'bg-disaster-alien'
   }
 ];
 
@@ -47,9 +53,12 @@ const MainFeature = ({ onDisasterSelected }) => {
   const [username, setUsername] = useState('');
   const [showNamePrompt, setShowNamePrompt] = useState(false);
   const [isStarting, setIsStarting] = useState(false);
+  const { changeBackground } = useBackground();
   
   const handleDisasterClick = (disaster) => {
     setSelectedDisaster(disaster);
+    // Apply background effect when disaster is selected
+    changeBackground(disaster.id);
     setShowNamePrompt(true);
   };
 
@@ -91,7 +100,7 @@ const MainFeature = ({ onDisasterSelected }) => {
           {disasterTypes.map((disaster, index) => (
             <motion.div
               key={disaster.id}
-              className={`disaster-card ${disaster.className} cursor-pointer p-6 sm:p-8 text-white`}
+              className={`disaster-card ${disaster.className} cursor-pointer p-6 sm:p-8 text-white relative`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -99,7 +108,16 @@ const MainFeature = ({ onDisasterSelected }) => {
               onClick={() => handleDisasterClick(disaster)}
               onMouseEnter={() => setHoveredDisaster(disaster.id)}
               onMouseLeave={() => setHoveredDisaster(null)}
+              style={{
+                backgroundImage: `url('/images/${disaster.id}-card.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
             >
+              {/* Semi-transparent overlay for better text readability */}
+              <div className={`absolute inset-0 ${disaster.className} opacity-70 rounded-2xl`}></div>
+              
+              <div className="relative z-10">
               <div className="flex items-center mb-4">
                 <div className="bg-white/20 p-3 rounded-full mr-4">
                   <ApperIcon name={disaster.icon} className="h-8 w-8" />
@@ -120,6 +138,7 @@ const MainFeature = ({ onDisasterSelected }) => {
                   </motion.p>
                 )}
               </AnimatePresence>
+              </div>
             </motion.div>
           ))}
         </AnimatePresence>
@@ -141,7 +160,7 @@ const MainFeature = ({ onDisasterSelected }) => {
               transition={{ type: 'spring', damping: 25 }}
             >
               <div className="text-center mb-6">
-                <div className={`inline-block p-3 rounded-full mb-4 ${selectedDisaster.className}`}>
+                <div className={`inline-block p-3 rounded-full mb-4 ${selectedDisaster.className} relative z-10`}>
                   <ApperIcon name={selectedDisaster.icon} className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-2">
@@ -150,6 +169,10 @@ const MainFeature = ({ onDisasterSelected }) => {
                 <p className="text-surface-600 dark:text-surface-300">
                   Enter your name to start the quiz
                 </p>
+              </div>
+              
+              <div className={`absolute inset-0 opacity-10 rounded-xl ${selectedDisaster.bgClass}`} 
+                   style={{backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0}}>
               </div>
               
               <form onSubmit={handleStartQuiz}>
