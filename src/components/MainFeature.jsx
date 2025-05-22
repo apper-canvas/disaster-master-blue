@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import ApperIcon from './ApperIcon';
 import { useBackground } from '../contexts/BackgroundContext';
@@ -49,39 +49,13 @@ const disasterTypes = [
 
 const MainFeature = ({ onDisasterSelected }) => {
   const [hoveredDisaster, setHoveredDisaster] = useState(null);
-  const [selectedDisaster, setSelectedDisaster] = useState(null);
-  const [username, setUsername] = useState('');
-  const [showNamePrompt, setShowNamePrompt] = useState(false);
-  const [isStarting, setIsStarting] = useState(false);
   const { changeBackground } = useBackground();
   
   const handleDisasterClick = (disaster) => {
-    setSelectedDisaster(disaster);
     // Apply background effect when disaster is selected
     changeBackground(disaster.id);
-    setShowNamePrompt(true);
-  };
-
-  const handleStartQuiz = (e) => {
-    e.preventDefault();
-    
-    if (!username.trim()) {
-      toast.error("Please enter your name before starting");
-      return;
-    }
-    
-    setIsStarting(true);
-    
-    // Store the username in localStorage
-    localStorage.setItem('disastermaster_username', username);
-    
-    // Show success toast
-    toast.success(`${username}, get ready for the ${selectedDisaster.name} scenario!`);
-    
-    // Small delay before navigation for animation
-    setTimeout(() => {
-      onDisasterSelected(selectedDisaster.id);
-    }, 800);
+    toast.info(`Starting ${disaster.name} challenge!`);
+    onDisasterSelected(disaster.id);
   };
   
   return (
@@ -96,7 +70,7 @@ const MainFeature = ({ onDisasterSelected }) => {
       </motion.h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <AnimatePresence>
+        {/* AnimatePresence not needed here as we're not animating components in/out of existence */}
           {disasterTypes.map((disaster, index) => (
             <motion.div
               key={disaster.id}
@@ -141,89 +115,7 @@ const MainFeature = ({ onDisasterSelected }) => {
               </div>
             </motion.div>
           ))}
-        </AnimatePresence>
       </div>
-      
-      <AnimatePresence>
-        {showNamePrompt && (
-          <motion.div
-            className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div 
-              className="bg-white dark:bg-surface-800 p-6 sm:p-8 rounded-xl w-full max-w-md"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: 'spring', damping: 25 }}
-            >
-              <div className="text-center mb-6">
-                <div className={`inline-block p-3 rounded-full mb-4 ${selectedDisaster.className} relative z-10`}>
-                  <ApperIcon name={selectedDisaster.icon} className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-2">
-                  {selectedDisaster.name} Challenge
-                </h3>
-                <p className="text-surface-600 dark:text-surface-300">
-                  Enter your name to start the quiz
-                </p>
-              </div>
-              
-              <div className={`absolute inset-0 opacity-10 rounded-xl ${selectedDisaster.bgClass}`} 
-                   style={{backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0}}>
-              </div>
-              
-              <form onSubmit={handleStartQuiz}>
-                <div className="mb-4">
-                  <label htmlFor="username" className="block text-sm font-medium text-surface-700 dark:text-surface-300 mb-1">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="username"
-                    className="w-full px-4 py-3 rounded-lg border border-surface-300 dark:border-surface-600 bg-white dark:bg-surface-700 text-surface-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Enter your name"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    disabled={isStarting}
-                    autoFocus
-                  />
-                </div>
-                
-                <div className="flex gap-3 mt-6">
-                  <button
-                    type="button"
-                    className="flex-1 px-4 py-3 bg-surface-200 dark:bg-surface-700 rounded-lg text-surface-700 dark:text-surface-300 font-medium hover:bg-surface-300 dark:hover:bg-surface-600 transition-colors"
-                    onClick={() => setShowNamePrompt(false)}
-                    disabled={isStarting}
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="submit"
-                    className={`flex-1 px-4 py-3 ${selectedDisaster.className} rounded-lg text-white font-medium hover:opacity-90 transition-colors flex items-center justify-center gap-2`}
-                    disabled={isStarting}
-                  >
-                    {isStarting ? (
-                      <>
-                        <div className="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full"></div>
-                        <span>Preparing...</span>
-                      </>
-                    ) : (
-                      <>
-                        <span>Start Quiz</span>
-                        <ApperIcon name="ArrowRight" className="h-5 w-5" />
-                      </>
-                    )}
-                  </button>
-                </div>
-              </form>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 };

@@ -19,8 +19,8 @@ const Home = () => {
     
     // Navigate to quiz page with the selected disaster type
     setTimeout(() => {
-      navigate(`/quiz?type=${encodeURIComponent(disasterType)}`);
-    }, 500);
+      navigate(`/quiz?type=${encodeURIComponent(disasterType)}`, { replace: true });
+    }, 300);
   };
   
   const pageVariants = {
