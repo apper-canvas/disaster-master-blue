@@ -24,7 +24,9 @@ export const BackgroundProvider = ({ children }) => {
       particleColor: '#457B9D',
       accentColor: '#E63946',
       secondaryColor: '#FFD166',
-      backgroundStyle: 'bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-800 dark:to-surface-900'
+      backgroundStyle: 'bg-gradient-to-br from-surface-100 to-surface-200 dark:from-emergency-dark dark:to-emergency-red',
+      textColor: 'text-surface-900 dark:text-surface-50',
+      accentTextColor: 'text-primary-dark dark:text-primary-light'
     },
     earthquake: {
       primaryAnimation: 'shake-slow',

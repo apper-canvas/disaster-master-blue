@@ -40,11 +40,11 @@ function App() {
             </AnimatePresence>
           </div>
         </Router>
-        
-        <div className="fixed inset-0 z-0 bg-surface-50 dark:bg-surface-900 transition-opacity duration-500">
-          {/* This is the base background layer */}
-          {/* Disaster-specific backgrounds are applied via the BackgroundContext */}
-        </div>
+
+        <div className="fixed inset-0 z-0 bg-surface-50 dark:bg-emergency-gradient transition-opacity duration-500">
+          {/* Base background layer with emergency theme */}
+          <div className="absolute inset-0 bg-pattern-texture opacity-10 dark:opacity-20"></div>
+        </div>  
       </div>
       
       <ToastContainer

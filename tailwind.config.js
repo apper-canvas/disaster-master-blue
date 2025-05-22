@@ -9,10 +9,13 @@ export default {
       colors: {
         primary: {
           DEFAULT: '#E63946',
-          light: '#FF6B6B',
+          light: '#FF7B7B',
           dark: '#C1121F'
         },
         secondary: {
+          DEFAULT: '#457B9D',
+          light: '#6D9DC5',
+          dark: '#1D3557'
           DEFAULT: '#457B9D',
           light: '#6D9DC5',
           dark: '#1D3557'
@@ -29,7 +32,13 @@ export default {
           700: '#334155',  // Added
           800: '#1e293b',  // Added
           900: '#0f172a'   // Darkest
-        }
+        },
+        emergency: {
+          dark: '#1a1a1a',    // Charcoal
+          darker: '#2c1517',   // Dark maroon-charcoal
+          red: '#3b1619',      // Deep red
+          bright: '#c41c24'    // Alert red
+        },
       },
       fontFamily: {
         sans: ['Rubik', 'ui-sans-serif', 'system-ui'],
@@ -50,7 +59,8 @@ export default {
         'fire': "url('/images/fire-bg.jpg')",
         'flood': "url('/images/flood-bg.jpg')",
         'zombie': "url('/images/zombie-bg.jpg')",
-        'alien': "url('/images/alien-bg.jpg')"
+        'alien': "url('/images/alien-bg.jpg')",
+        'emergency-gradient': 'linear-gradient(135deg, var(--tw-color-emergency-dark), var(--tw-color-emergency-darker), var(--tw-color-emergency-red))'
       },
       keyframes: {
         shake: {
