@@ -16,6 +16,51 @@ export const useBackground = () => {
 export const BackgroundProvider = ({ children }) => {
   const [currentBackground, setCurrentBackground] = useState(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [themeAnimations, setThemeAnimations] = useState(null);
+
+  // Theme-specific animation data
+  const themeData = {
+    earthquake: {
+      primaryAnimation: 'shake-slow',
+      secondaryAnimation: 'debris-fall',
+      particleColor: '#B67F50',
+      accentColor: '#814A19',
+      iconAnimation: 'shake',
+      particleType: 'debris'
+    },
+    fire: {
+      primaryAnimation: 'flicker',
+      secondaryAnimation: 'ember-rise',
+      particleColor: '#FFB001',
+      accentColor: '#E63946',
+      iconAnimation: 'flicker-fast',
+      particleType: 'ember'
+    },
+    flood: {
+      primaryAnimation: 'float',
+      secondaryAnimation: 'droplet-fall',
+      particleColor: '#76C893',
+      accentColor: '#1A759F',
+      iconAnimation: 'float-fast',
+      particleType: 'droplet'
+    },
+    zombie: {
+      primaryAnimation: 'lurch',
+      secondaryAnimation: 'hand-rise',
+      particleColor: '#6A994E',
+      accentColor: '#386641',
+      iconAnimation: 'sway',
+      particleType: 'hand'
+    },
+    alien: {
+      primaryAnimation: 'pulse',
+      secondaryAnimation: 'orb-float',
+      particleColor: '#7209B7',
+      accentColor: '#3F37C9',
+      iconAnimation: 'pulse-fast',
+      particleType: 'orb'
+    }
+  };
 
   const changeBackground = (disasterId) => {
     setIsTransitioning(true);
@@ -23,10 +68,11 @@ export const BackgroundProvider = ({ children }) => {
       setCurrentBackground(disasterId);
       setIsTransitioning(false);
     }, 300);
+    setThemeAnimations(disasterId ? themeData[disasterId] : null);
   };
 
   return (
-    <BackgroundContext.Provider value={{ currentBackground, changeBackground, isTransitioning }}>
+    <BackgroundContext.Provider value={{ currentBackground, changeBackground, isTransitioning, themeAnimations, themeData }}>
       {children}
     </BackgroundContext.Provider>
   );

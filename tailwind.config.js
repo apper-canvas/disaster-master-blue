@@ -52,9 +52,84 @@ export default {
         'zombie': "url('/images/zombie-bg.jpg')",
         'alien': "url('/images/alien-bg.jpg')"
       },
+      keyframes: {
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-5px)' },
+          '20%, 40%, 60%, 80%': { transform: 'translateX(5px)' }
+        },
+        flicker: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.7 }
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+        },
+        lurch: {
+          '0%': { transform: 'rotate(0deg) translateX(0)' },
+          '25%': { transform: 'rotate(2deg) translateX(5px)' },
+          '50%': { transform: 'rotate(0deg) translateX(0)' },
+          '75%': { transform: 'rotate(-2deg) translateX(-5px)' },
+          '100%': { transform: 'rotate(0deg) translateX(0)' }
+        },
+        pulse: {
+          '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+          '50%': { opacity: 0.8, transform: 'scale(1.05)' }
+        },
+        fall: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100vh)' }
+        },
+        rise: {
+          '0%': { transform: 'translateY(100vh)' },
+          '100%': { transform: 'translateY(-100%)' }
+        },
+        sway: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' }
+        },
+        fadeInOut: {
+          '0%, 100%': { opacity: 0 },
+          '50%': { opacity: 1 }
+        },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' }
+        }
+      },
       animation: {
-        'xl': '0.75rem',
-        '2xl': '1rem'
+        // Earthquake animations
+        'shake': 'shake 0.5s ease-in-out infinite',
+        'shake-slow': 'shake 3s ease-in-out infinite',
+        'debris-fall': 'fall 3s linear forwards',
+        
+        // Fire animations
+        'flicker': 'flicker 1.5s ease-in-out infinite',
+        'flicker-fast': 'flicker 0.5s ease-in-out infinite',
+        'ember-rise': 'rise 4s linear forwards',
+        
+        // Flood animations
+        'float': 'float 3s ease-in-out infinite',
+        'float-fast': 'float 1.5s ease-in-out infinite',
+        'droplet-fall': 'fall 2s linear forwards',
+        
+        // Zombie animations
+        'lurch': 'lurch 2s ease-in-out infinite',
+        'hand-rise': 'rise 8s linear forwards',
+        'sway': 'sway 2s ease-in-out infinite',
+        
+        // Alien animations
+        'pulse': 'pulse 2s ease-in-out infinite',
+        'pulse-fast': 'pulse 1s ease-in-out infinite',
+        'orb-float': 'float 5s ease-in-out infinite',
+        'spin': 'spin 8s linear infinite',
+        'spin-reverse': 'spin 8s linear infinite reverse',
+        
+        // General animations
+        'fade-in-out': 'fadeInOut 2s ease-in-out infinite',
+        'float-slow': 'float 6s ease-in-out infinite',
+        'sway-slow': 'sway 6s ease-in-out infinite',
       }
     }
   },
