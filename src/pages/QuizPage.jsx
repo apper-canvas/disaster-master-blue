@@ -8,14 +8,14 @@ const QuizPage = () => {
   const navigate = useNavigate();
   const { currentBackground } = useBackground();
   
-  // Get disaster type from URL params
+  // Get disaster type from URL query params
   const params = new URLSearchParams(window.location.search);
   const disasterType = params.get('type');
   
   // If no disaster type is specified, redirect to home
   useEffect(() => {
     if (!disasterType) {
-      navigate('/');
+      navigate('/', { replace: true });
     }
   }, [disasterType, navigate]);
   
@@ -70,7 +70,16 @@ const QuizPage = () => {
           </h1>
         </div>
         
-        <p className="text-lg mb-6">Quiz questions for {formatDisasterName(disasterType)} scenario will appear here.</p>
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-4">Welcome to the {formatDisasterName(disasterType)} Challenge!</h2>
+          <p className="text-lg mb-4">
+            Test your knowledge and preparedness for dealing with a {formatDisasterName(disasterType.toLowerCase())} scenario.
+          </p>
+          <p className="text-md text-surface-600 dark:text-surface-300 mb-6">
+            Answer the following questions to see how prepared you would be in a real emergency.
+            Good luck!
+          </p>
+        </div>
         
         <button 
           onClick={() => navigate('/')}

@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { useBackground } from '../contexts/BackgroundContext';
 import { toast } from 'react-toastify';
-import ApperIcon from './ApperIcon';
+const MainFeature = () => {
+  const navigate = useNavigate();
+  const { changeBackground } = useBackground();
 import { useBackground } from '../contexts/BackgroundContext';
 
 const disasterTypes = [
@@ -11,6 +15,16 @@ const disasterTypes = [
     icon: 'Mountain',
     description: 'Test your knowledge about earthquake safety and preparedness.',
     className: 'disaster-earthquake',
+  const handleDisasterClick = (disasterId) => {
+    // Change the background based on the selected disaster
+    changeBackground(disasterId);
+    
+    // Navigate to quiz page with the selected disaster type after a short delay
+    setTimeout(() => {
+      navigate(`/quiz?type=${encodeURIComponent(disasterId)}`);
+    }, 300);
+  };
+
     bgClass: 'bg-disaster-earthquake'
   },
   {
@@ -40,8 +54,8 @@ const disasterTypes = [
   {
     id: 'alien',
     name: 'Alien Invasion',
-    icon: 'Rocket',
-    description: 'Creative scenario teaching adaptability and resource management.',
+            onClick={() => handleDisasterClick(disaster.id)}
+            className={`disaster-card ${`disaster-${disaster.id}`} p-6 sm:p-8 text-white hover:cursor-pointer text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-light`}
     className: 'disaster-alien',
     bgClass: 'bg-disaster-alien'
   }

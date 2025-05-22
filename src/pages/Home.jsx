@@ -1,28 +1,9 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import ApperIcon from '../components/ApperIcon';
 import MainFeature from '../components/MainFeature';
-import { useBackground } from '../contexts/BackgroundContext';
 
 const Home = () => {
-  const [selectedDisaster, setSelectedDisaster] = useState(null);
-  const navigate = useNavigate();
-  const { changeBackground } = useBackground();
-  
-  const handleDisasterSelected = (disasterType) => {
-    setSelectedDisaster(disasterType);
-    
-    // Change the background based on the selected disaster
-    changeBackground(disasterType);
-    
-    
-    // Navigate to quiz page with the selected disaster type
-    setTimeout(() => {
-      navigate(`/quiz?type=${encodeURIComponent(disasterType)}`, { replace: true });
-    }, 300);
-  };
-  
+  // Page transition animations
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -70,7 +51,7 @@ const Home = () => {
           </motion.p>
         </header>
         
-        <MainFeature onDisasterSelected={handleDisasterSelected} />
+        <MainFeature />
         
         <footer className="mt-12 text-center text-surface-500 dark:text-surface-400">
           <p className="text-sm">© {new Date().getFullYear()} DisasterMaster | Educational Quiz Game</p>
