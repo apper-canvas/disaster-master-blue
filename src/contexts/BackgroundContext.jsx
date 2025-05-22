@@ -21,12 +21,9 @@ export const BackgroundProvider = ({ children }) => {
   // Theme-specific animation data
   const themeData = {
     home: {
-      primaryAnimation: 'float-bounce',
-      secondaryAnimation: 'drift',
       particleColor: '#457B9D',
       accentColor: '#E63946',
-      iconAnimation: 'pulse',
-      particleType: 'geometric',
+      secondaryColor: '#FFD166',
       backgroundStyle: 'bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-800 dark:to-surface-900'
     },
     earthquake: {

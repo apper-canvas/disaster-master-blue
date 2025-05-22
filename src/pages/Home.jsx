@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ApperIcon from '../components/ApperIcon';
 import MainFeature from '../components/MainFeature';
-import HomeAnimation from '../components/HomeAnimation';
+import HomeTheme from '../components/HomeTheme';
 import { useBackground } from '../contexts/BackgroundContext';
 
 const Home = () => {
@@ -43,7 +43,7 @@ const Home = () => {
       exit="out"
       variants={pageVariants}
     >
-      <HomeAnimation />
+      <HomeTheme />
       
       <div className="relative z-10">
         <header className="text-center mb-8 sm:mb-12">
