@@ -20,6 +20,7 @@ const QuizPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [score, setScore] = useState(0);
+  const [correctAnswer, setCorrectAnswer] = useState(null);
   
   // If no disaster type is specified, redirect to home
   useEffect(() => {
@@ -64,6 +65,20 @@ const QuizPage = () => {
   const handleAnswer = (selectedOptionIndex) => {
     const newAnswers = [...userAnswers, selectedOptionIndex];
     setUserAnswers(newAnswers);
+
+    // Check if answer is correct
+    const isCorrect = selectedOptionIndex === questions[currentQuestionIndex].correctAnswer;
+    
+    // Show survival toast based on the answer
+    if (isCorrect) {
+      toast.success("You survived this challenge!", {
+        icon: "😎"
+      });
+    } else {
+      toast.error("That decision could be fatal!", {
+        icon: "💀"
+      });
+    }
     
     // Move to next question or end quiz
     if (currentQuestionIndex < questions.length - 1) {
@@ -225,6 +240,7 @@ const QuizPage = () => {
                 onAnswer={handleAnswer}
                 questionNumber={currentQuestionIndex + 1}
                 totalQuestions={questions.length}
+                correctAnswer={questions[currentQuestionIndex].correctAnswer}
               />
             </motion.div>
           )}
