@@ -231,70 +231,59 @@ const quizData = {
     {
       question: "Aliens have landed! Which survival skill might actually work for both extraterrestrial invasions AND boring Earth emergencies?",
       options: [
-        "Speaking Klingon (universal translator might come in handy)",
-        "Having an emergency kit with food, water, and supplies (universal survival hack)",
-      question: "Aliens landed! Which skill works for ALL emergencies?",
-        "Tinfoil hat crafting techniques (blocks mind control AND makes fashionable headwear)"
         "Speaking Klingon",
         "Emergency kit with supplies",
         "Constellation navigation skills",
         "Tinfoil hat crafting"
-    {
-      question: "The aliens knocked out all technology! How will you get updates on the invasion without Instagram?",
+      ],
+      correctAnswer: 1,
       explanation: "Emergency kits work for hurricanes, blizzards AND aliens! Ray guns can't zap away good preparation."
-        "Check your phone every 5 seconds hoping the alien-proof 6G kicks in",
-        "Refresh Twitter to see if #AlienInvasion or #WeAreDoomed is trending yet",
+    },
+    {
       question: "Aliens killed all tech! How get invasion updates?",
-        "Look out the window and count how many flying saucers you see (more than 3 = bad news)"
+      options: [
         "Check phone obsessively",
         "Refresh Twitter for #AlienInvasion",
         "Use emergency radio with buttons",
         "Count flying saucers from window"
-    {
-      question: "You've captured an alien! What's your first question?",
+      ],
+      correctAnswer: 2,
       explanation: "Radio is the cockroach of tech - impossible to kill. Aliens always forget about radio!"
-        "\"Are you going to eat me? Just checking for meal planning purposes\"",
-        "\"Can I see your spaceship? I've always wanted to take a selfie in one\"",
+    },
+    {
       question: "You caught an alien! First question?",
-        "\"Do you have TikTok where you come from?\""
+      options: [
         "\"Planning to eat me?\"",
         "\"Spaceship selfie tour?\"",
         "\"What are your Earth intentions?\"",
         "\"Got alien TikTok?\""
-    {
-      question: "An alien offers you a ride in their spaceship. What's the smart move?",
+      ],
+      correctAnswer: 2,
       explanation: "Knowing their intentions helps survival planning. But they probably do have TikTok."
-        "Accept immediately! Space tourism usually costs millions!",
-        "Politely decline and ask for their space business card instead",
+    },
+    {
       question: "Alien offers spaceship ride. Smart move?",
-        "Tell them you'll consider it after checking their spacecraft's safety rating online"
+      options: [
         "Accept! Free space tourism!",
         "Politely decline, ask for card",
         "Bring emotional support goldfish",
         "Check spacecraft safety ratings first"
-    {
-      question: "The aliens are broadcasting mind-control beams! How will you get reliable emergency information?",
+      ],
+      correctAnswer: 3,
       explanation: "Strange vehicles + unknown beings = bad idea, regardless of planet origin. Galactic stranger danger!"
-        "Check Twitter - alien overlords are probably verified users by now",
-        "Call your friend who believes in conspiracy theories - they've been preparing for this",
+    },
+    {
       question: "Aliens broadcasting mind-control! Get reliable info how?",
-        "Look out your window and count the number of flying saucers to gauge threat level"
+      options: [
         "Check Twitter - aliens verified yet?",
         "Call conspiracy theory friend",
         "Listen to official emergency broadcasts",
         "Count flying saucers from window"
-    {
-      question: "The REAL reason the government wants you to have emergency supplies is:",
-      options: [
-        "They've been preparing us for aliens all along",
-        "So you won't have to order emergency DoorDash during disasters",
-        "Because the emergency snack industry has powerful lobbyists",
-        "To have something to trade with your neighbors for their better emergency supplies"
       ],
-        "Preparing us for aliens secretly",
-        "Prevent emergency DoorDash orders",
-        "Emergency snack lobbyists are powerful",
-        "Trading with neighbors who prepped better"
+      correctAnswer: 2,
+      explanation: "Official emergency broadcasts are designed to work during disasters. Even alien ones!"
+    }
+  ]
 };
 
-      explanation: "Self-sufficiency when services fail during disasters. Even when your DoorDash driver gets abducted."
+export default quizData;
