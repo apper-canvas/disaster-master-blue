@@ -1,287 +1,287 @@
 const quizData = {
   earthquake: [
     {
-      question: "What should you do first during an earthquake?",
+      question: "You're watching Netflix when suddenly your couch starts doing the macarena. What's your first move?",
       options: [
-        "Run outside immediately",
-        "Drop, cover, and hold on",
-        "Call emergency services",
-        "Stand in a doorway"
+        "Sprint outside screaming 'THE END IS NEAR!'",
+        "Drop, cover, and hold on to your snacks for dear life",
+        "Call your mom to say goodbye dramatically",
+        "Take a selfie with your shaking furniture for the 'gram"
       ],
       correctAnswer: 1,
-      explanation: "The safest immediate action is to drop to the ground, take cover under sturdy furniture, and hold on until the shaking stops."
+      explanation: "Drop, cover, and hold on is actually the right move! Protect yourself first, your Netflix queue will still be there later."
     },
     {
-      question: "Which of these is NOT recommended during an earthquake?",
+      question: "Your cat just knocked over a vase, but wait... it's actually an earthquake! Which spot is the WORST place to hide?",
       options: [
-        "Getting under a sturdy desk",
-        "Standing near windows",
-        "Staying indoors if you're already inside",
-        "Protecting your head and neck"
+        "Under your solid oak table",
+        "Next to your fancy glass display cabinet",
+        "In a doorway, superhero pose optional",
+        "Under your bed, where monsters can't get you"
       ],
       correctAnswer: 1,
-      explanation: "Windows can shatter during earthquakes, sending glass flying. Stay away from windows, glass, and exterior doors."
+      explanation: "Glass cabinets are earthquake's best friends - they'll shower you with sharp souvenirs. Stay away from windows and glass during shaky times!"
     },
     {
-      question: "What should be included in an earthquake emergency kit?",
+      question: "Your earthquake emergency kit should definitely contain:",
       options: [
-        "Only food and water",
-        "Only first aid supplies",
-        "Food, water, first aid kit, flashlight, and battery-powered radio",
-        "Just a flashlight and radio"
+        "Just some cool rocks to throw back at the earth",
+        "A single granola bar (earthquakes never last long, right?)",
+        "Water, food, first aid kit, flashlight, radio, and your comfort teddy bear",
+        "Your collection of earthquake documentaries for reference"
       ],
       correctAnswer: 2,
-      explanation: "A complete emergency kit should include food, water, first aid supplies, flashlight, battery-powered radio, and other essential items."
+      explanation: "A complete kit should have water, food, first aid supplies, flashlight, and radio. The teddy bear is optional but highly recommended for emotional support!"
     },
     {
-      question: "After an earthquake, when is it safe to go back inside a building?",
+      question: "The earthquake's over! Your apartment building is tilting like the Tower of Pisa. When should you go back in for your favorite coffee mug?",
       options: [
-        "Immediately after the shaking stops",
-        "After authorities declare it safe",
-        "After 10 minutes",
-        "Only if you see others entering"
+        "Immediately - that mug has sentimental value!",
+        "After professional inspectors say it's safe (boring but correct)",
+        "When your pizza delivery guy refuses to come upstairs",
+        "When your neighbor's cat goes in first (nature's canary)"
       ],
       correctAnswer: 1,
-      explanation: "Wait until authorities have inspected the building and declared it safe. Aftershocks can cause additional damage to weakened structures."
+      explanation: "Wait for the professionals! Your leaning tower of apartment might decide to fully commit to the Pisa aesthetic during an aftershock."
     },
     {
-      question: "What is the \"triangle of life\" theory for earthquake safety?",
+      question: "Your uncle shares a Facebook post about the 'triangle of life' earthquake survival method. What's the scientific consensus?",
       options: [
-        "A proven safety technique recommended by experts",
-        "A controversial theory not supported by earthquake safety experts",
-        "A government-approved safety protocol",
-        "The safest place to be during an earthquake"
+        "It's a life-saving technique endorsed by all scientists everywhere",
+        "It's about as reliable as your horoscope - stick with drop, cover, and hold on",
+        "It only works if you form an actual triangle with your body",
+        "It's the official method taught by triangle salespeople"
       ],
       correctAnswer: 1,
-      explanation: "The 'triangle of life' theory is controversial and not supported by earthquake safety experts. Experts recommend 'Drop, Cover, and Hold On' instead."
+      explanation: "The 'triangle of life' theory is not supported by earthquake safety experts. It's like using a chocolate teapot - sounds good, doesn't work. Stick with 'Drop, Cover, and Hold On'!"
     }
   ],
   fire: [
     {
-      question: "What should you do if your clothes catch fire?",
+      question: "Your newest TikTok dance got a little too lit and now your outfit is on fire! What's your next viral move?",
       options: [
-        "Run to find water",
-        "Fan the flames to extinguish them",
-        "Stop, drop, and roll",
-        "Remove the clothing immediately"
+        "Run around the room screaming - the wind will blow it out!",
+        "Jump into your neighbor's pool (trespassing forgiven in emergencies)",
+        "Stop, drop, and roll like it's the hottest dance move of 2023",
+        "Take a fire selfie for your dating profile - 'Too hot to handle'"
       ],
       correctAnswer: 2,
-      explanation: "Stop, drop, and roll is the correct procedure. Stop immediately, drop to the ground, and roll back and forth to smother the flames."
+      explanation: "Stop, drop, and roll isn't just catchy - it actually works! The rolling smothers the flames by depriving them of oxygen. Plus, it'll get more views than your dance anyway."
     },
     {
-      question: "What is the recommended way to exit a smoke-filled room?",
+      question: "Your gaming room is suddenly smoky, and it's not from your friend's vape this time. How do you escape?",
       options: [
-        "Run as fast as possible through the smoke",
-        "Crawl low under the smoke",
-        "Cover your face with a wet cloth and walk normally",
-        "Open windows to clear the smoke first"
+        "Naruto run through the smoke as fast as possible",
+        "Channel your inner snake and slither below the smoke",
+        "Throw water at the smoke to clear a path",
+        "Use a leaf blower to push the smoke away"
       ],
       correctAnswer: 1,
-      explanation: "Crawl low under the smoke. Smoke rises, so the air is clearer and cooler near the floor."
+      explanation: "Smoke rises like your electricity bill, so the clearest air is near the floor. Crawl low to avoid smoke inhalation and find the exit."
     },
     {
-      question: "Which type of fire extinguisher is appropriate for electrical fires?",
+      question: "Oh no! Your gaming PC is shooting sparks like a tiny rave! Which fire extinguisher should you grab?",
       options: [
-        "Class A (Water)",
-        "Class B (Foam)",
-        "Class C (Carbon Dioxide or Dry Chemical)",
-        "Class D (Metal)"
+        "Class A (Water) - fight technology with nature!",
+        "Class B (Foam) - computers love bubble baths",
+        "Class C (Carbon Dioxide or Dry Chemical) - the one actually designed for electrical fires",
+        "Class D (Metal) - fight fire with metal, like a rock concert"
       ],
       correctAnswer: 2,
-      explanation: "Class C extinguishers are designed for electrical fires. Water-based extinguishers can conduct electricity and should never be used on electrical fires."
+      explanation: "Class C extinguishers are made for electrical fires. Using water on electrical fires is like swimming during a thunderstorm - shocking results guaranteed!"
     },
     {
-      question: "What is the most important thing to do before going to sleep each night?",
+      question: "Before heading to dreamland each night, what's the #1 fire safety check that's more important than your phone's battery level?",
       options: [
-        "Check that all doors are locked",
-        "Turn off all lights",
-        "Make sure smoke detectors are working",
-        "Close all windows"
+        "Make sure your selfie lighting is turned off",
+        "Hide all evidence of your midnight snack",
+        "Test that smoke detectors are working (yes, even when Netflix asks if you're still watching)",
+        "Check that your teddy bear is in fire-resistant pajamas"
       ],
       correctAnswer: 2,
-      explanation: "Working smoke detectors can alert you to a fire while you're sleeping, potentially saving lives. They should be tested regularly."
+      explanation: "Working smoke detectors are your midnight guardian angels. They can wake you up if there's a fire, even if you're dreaming about winning the lottery."
     },
     {
-      question: "What should you do if you're trapped in a room during a fire?",
+      question: "You're trapped in your bedroom during a fire and your only company is your collection of rubber ducks. What's your best strategy?",
       options: [
-        "Break a window and jump out",
-        "Hide in a closet",
-        "Seal doors with wet towels, call for help, and signal from windows",
-        "Try to run through the fire to escape"
+        "Use the rubber ducks to smash windows and leap dramatically to freedom",
+        "Hide under the bed - fire can't find what it can't see!",
+        "Wet towels under doors, call for help, wave from window like you're on a parade float",
+        "Attempt to fight fire with inspirational quotes about staying cool"
       ],
       correctAnswer: 2,
-      explanation: "Seal doors and vents with wet towels to keep smoke out, call for help, and signal your location from a window if possible."
+      explanation: "Seal the door with wet towels to block smoke, call for help, and signal your location from the window. The rubber ducks can provide emotional support."
     }
   ],
   flood: [
     {
-      question: "What should you do if you encounter a flooded road while driving?",
+      question: "You're driving and spot what looks like a new swimming pool across the road. Should you:",
       options: [
-        "Drive through slowly if the water isn't too deep",
-        "Turn around, don't drown",
-        "Park and walk through the water",
-        "Wait for the water to recede"
+        "Test if your car has secret boat mode by driving through slowly",
+        "Remember the catchy phrase 'turn around, don't drown' and actually follow it",
+        "Park and wade through - your new shoes are waterproof, right?",
+        "Wait for someone else to go first and take notes on their success/failure"
       ],
       correctAnswer: 1,
-      explanation: "Turn around, don't drown. Just 6 inches of water can cause loss of control and stalling, and 12 inches can float many vehicles."
+      explanation: "Turn around, don't drown isn't just a cute rhyme. Just 6 inches of water can sweep you away, and your car isn't a submarine no matter what the dealer claimed."
     },
     {
-      question: "Which of these should NOT be done during a flood warning?",
+      question: "There's a flood warning and your friend suggests you both go splash in the rising water. What's your response?",
       options: [
-        "Move to higher ground",
-        "Fill bathtubs with clean water",
-        "Wade through moving water to reach safety",
-        "Listen to emergency broadcasts"
+        "Pack your emergency kit and head for higher ground",
+        "Fill your bathtub with water (for later use, not for recreational swimming)",
+        "Agree! What could possibly go wrong with a little urban white-water adventure?",
+        "Turn on emergency broadcasts instead of your usual true crime podcast"
       ],
       correctAnswer: 2,
-      explanation: "Never wade through moving water. Just 6 inches of moving water can knock you down, and the water may be contaminated."
+      explanation: "Flood water is basically nature's mystery stew - full of debris, contaminants, and potential hazards. Just 6 inches of moving water can knock you down faster than rejection at prom."
     },
     {
-      question: "What is the first thing you should do after returning to a home that was flooded?",
+      question: "Your home just hosted an unwanted pool party courtesy of Mother Nature. What's your first move when returning?",
       options: [
-        "Check for structural damage",
-        "Clean and disinfect everything",
-        "Turn on the electricity",
-        "Call your insurance company"
+        "Check if the house is still structurally sound or just a soggy cardboard box now",
+        "Start cleaning everything immediately with your favorite lavender-scented products",
+        "Flip on all the light switches to see what still works",
+        "Take artistic 'before' photos for your home renovation social media series"
       ],
       correctAnswer: 0,
-      explanation: "Check for structural damage before entering. The building may be unstable due to water damage."
+      explanation: "Check the structure first! Your house might be playing Jenga with physics after a flood. No Instagram photo is worth a roof on your head."
     },
     {
-      question: "Which of these is a sign that you should evacuate your home during heavy rain?",
+      question: "During heavy rain, which of these is your cue to pack up and evacuate faster than leaving a bad date?",
       options: [
-        "Light rain lasting more than one day",
-        "Water rising rapidly or evacuation order issued",
-        "Cloudy weather forecast for the next week",
-        "Minor leaking in the basement"
+        "Your weather app shows little rain clouds for the entire week",
+        "Water rising faster than your anxiety during a job interview, or officials yelling 'GET OUT!'",
+        "Your cat looks worried about the weather",
+        "The basement has a small puddle (aka your new 'indoor water feature')"
       ],
       correctAnswer: 1,
-      explanation: "If water is rising rapidly or authorities have issued an evacuation order, leave immediately. Don't wait until it's too late."
+      explanation: "If water is rising rapidly or authorities issue an evacuation order, it's time to make like a tree and leave. Your stuff can be replaced, but you're a limited edition human."
     },
     {
-      question: "What should you do with food that has come into contact with floodwater?",
+      question: "Your fridge went swimming during a flood. What's the fate of your food collection?",
       options: [
-        "Wash it thoroughly and then consume it",
-        "Cook it at high temperatures to kill bacteria",
-        "Throw it away, including canned goods if they're damaged",
-        "Dry it in the sun before consuming"
+        "Wash everything with soap - good as new!",
+        "Cook it all at nuclear temperatures to assassinate the germs",
+        "Say goodbye to it all, even those canned beans you've been saving since 2019",
+        "Sun-dry everything on your roof like apocalyptic jerky"
       ],
       correctAnswer: 2,
-      explanation: "Throw away all food that has come into contact with floodwater, including canned goods if they're damaged. Floodwater contains bacteria and contaminants."
+      explanation: "Floodwater is basically a backstage pass for bacteria and contaminants. If food touched floodwater, it's time for the trash can, not your mouth."
     }
   ],
   zombie: [
     {
-      question: "Which survival skill would be most important during a zombie apocalypse?",
+      question: "The zombie apocalypse has finally happened! Which skill makes you the main character and not the one who dies in the first episode?",
       options: [
-        "Martial arts",
-        "First aid and basic medical knowledge",
-        "Playing dead",
-        "Social media management"
+        "Kung fu moves you learned from YouTube tutorials",
+        "First aid skills that don't involve WebMD diagnosing everyone with zombie-itis",
+        "The ability to convincingly play dead (acting classes finally useful!)",
+        "Managing your apocalypse Instagram - #ZombieLife #NoFilter #Brains"
       ],
       correctAnswer: 1,
-      explanation: "While this is a fictional scenario, in any emergency, first aid and medical knowledge can save lives. Knowing how to treat injuries and maintain health is crucial."
+      explanation: "In any apocalypse (zombie or otherwise), being able to patch up wounds and know basic medical care makes you the VIP of any survivor group. Plus, the zombies already have the 'playing dead' skill mastered."
     },
     {
-      question: "What is the most important resource to secure first in a zombie outbreak?",
+      question: "You've got 5 minutes to raid a store during the zombie apocalypse. Your priority shopping list should start with:",
       options: [
-        "Weapons",
-        "Electronic devices",
-        "Clean water and non-perishable food",
-        "Zombie repellent"
+        "Baseball bats and other zombie-bonking implements",
+        "The latest iPhone (zombies can't FaceTime... yet)",
+        "Water bottles and canned food that will taste terrible but keep you alive",
+        "Zombie repellent (located next to the unicorn food in aisle never)"
       ],
       correctAnswer: 2,
-      explanation: "In any disaster, securing clean water and food is the top priority for survival. Humans can only survive a few days without water."
+      explanation: "Water and food first! You can only survive about 3 days without water, but zombies will wander around for years. Your stomach doesn't care about the apocalypse, it still wants dinner."
     },
     {
-      question: "In terms of real-world disaster preparedness, what does the CDC's zombie preparedness campaign actually teach?",
+      question: "Plot twist: The CDC actually has a zombie preparedness guide! What's their REAL sneaky purpose with this guide?",
       options: [
-        "How to fight zombies",
-        "General emergency preparedness that applies to real disasters",
-        "That zombies are a legitimate threat",
-        "Government evacuation protocols"
+        "Teaching proper zombie combat techniques (aim for the head!)",
+        "Tricking you into learning actual useful emergency prep for boring real disasters",
+        "Confirming that the government knows zombies are coming",
+        "Testing which citizens would survive based on who downloads the guide"
       ],
       correctAnswer: 1,
-      explanation: "The CDC's zombie preparedness campaign was created to teach general emergency preparedness in an engaging way. The skills apply to real disasters like hurricanes, earthquakes, and pandemics."
+      explanation: "The CDC cleverly used zombies as a teaching tool to get people interested in actual disaster preparedness. They figured 'hurricane readiness' doesn't go viral, but 'zombie survival' does!"
     },
     {
-      question: "Which location would be best to avoid during a zombie outbreak?",
+      question: "Where should you definitely NOT make your zombie apocalypse hideout?",
       options: [
-        "A rural farmhouse",
-        "A boat on open water",
-        "Densely populated urban centers",
-        "A mountain cabin"
+        "A remote farmhouse with its own well (classic horror movie setting)",
+        "A boat named 'Zombie-Free Zone' (they can't swim... right?)",
+        "Shopping mall food court (great sales, terrible survival odds)",
+        "Mountain cabin where no one can hear you scream (wait...)"
       ],
       correctAnswer: 2,
-      explanation: "In any contagious outbreak, avoiding densely populated areas reduces exposure risk. This principle applies to real epidemics too."
+      explanation: "Crowded places are zombie buffets! In any outbreak - zombie or real diseases - avoiding crowds reduces your chances of joining the infected. Plus, mall food courts were already scary before zombies."
     },
     {
-      question: "What's the best communication strategy during a zombie apocalypse?",
+      question: "Your phone has 2% battery left during the zombie apocalypse. What's your best communication plan?",
       options: [
-        "Post updates on social media",
-        "Have a battery-powered or hand-crank radio for emergency broadcasts",
-        "Shout to attract rescue teams",
-        "Use zombie sounds to blend in"
+        "Use it to post one final perfect selfie #ZombieApocalypseLook",
+        "Grab that weird hand-crank radio your prepper uncle gave you last Christmas",
+        "Scream loudly so potential rescuers can find you (and zombies too!)",
+        "Practice zombie groans to communicate with your new undead friends"
       ],
       correctAnswer: 1,
-      explanation: "In real emergencies, having a battery-powered or hand-crank radio allows you to receive updates even when power and cellular networks are down."
+      explanation: "Hand-crank radios don't need charging and can receive emergency broadcasts when cellular networks become as dead as the zombies. Plus, the cranking motion is good stress relief!"
     }
   ],
   alien: [
     {
-      question: "What real-world disaster preparedness skill would be most useful during an alien invasion?",
+      question: "Aliens have landed! Which survival skill might actually work for both extraterrestrial invasions AND boring Earth emergencies?",
       options: [
-        "Speaking foreign languages",
-        "Having an emergency plan and supply kit",
-        "Astronomical knowledge",
-        "Advanced weapon training"
+        "Speaking Klingon (universal translator might come in handy)",
+        "Having an emergency kit with food, water, and supplies (aliens gotta respect preparation)",
+        "Knowing constellation names to impress our new overlords",
+        "Tinfoil hat crafting techniques (blocks mind control AND makes fashionable headwear)"
       ],
       correctAnswer: 1,
-      explanation: "While this is a fictional scenario, having an emergency plan and supply kit is valuable in any disaster, including natural disasters and civil emergencies."
+      explanation: "A good emergency kit works for hurricanes, blizzards, AND alien invasions! Aliens might have ray guns, but they can't zap away the value of being prepared with supplies!"
     },
     {
-      question: "In a fictional alien invasion, what communication method would likely be most reliable?",
+      question: "The aliens knocked out all technology! How will you get updates on the invasion without Instagram?",
       options: [
-        "Cellular networks",
-        "Internet-based communication",
-        "Radio communication",
-        "Telepathy"
+        "Check your phone every 5 seconds hoping the alien-proof 6G kicks in",
+        "Refresh Twitter to see if #AlienInvasion is trending yet",
+        "Dust off that emergency radio that still uses actual buttons",
+        "Develop telepathy through sheer panic and necessity"
       ],
       correctAnswer: 2,
-      explanation: "In any large-scale disaster where infrastructure might be compromised, radio communication (especially with hand-crank or battery-powered radios) tends to be more reliable than systems requiring intact infrastructure."
+      explanation: "Radio is the cockroach of communication technologies - nearly impossible to completely eliminate. When fancy digital systems fail, basic radio often still works. The aliens always forget about radio!"
     },
     {
-      question: "What is the primary reason the government recommends having emergency supplies?",
+      question: "The REAL reason the government wants you to have emergency supplies is:",
       options: [
-        "To prepare for alien invasions",
-        "To be self-sufficient during any emergency when services are disrupted",
-        "Because shops might run out of your favorite snacks",
-        "To have trading goods for bartering"
+        "They've been preparing us for aliens all along",
+        "So you won't have to order emergency DoorDash during disasters",
+        "Because the emergency snack industry has powerful lobbyists",
+        "To have something to trade with your neighbors for their better emergency supplies"
       ],
       correctAnswer: 1,
-      explanation: "Emergency supplies allow you to be self-sufficient during any disaster when normal services (water, electricity, grocery stores) might be disrupted."
+      explanation: "Emergency supplies help you be self-sufficient when normal services take a vacation during disasters. Even if the disaster is just your DoorDash driver getting abducted by aliens."
     },
     {
-      question: "Which of these is an actual FEMA recommendation for emergency preparedness?",
+      question: "Which of these is an actual FEMA recommendation and not something from a sci-fi movie?",
       options: [
-        "Stockpile weapons",
-        "Build underground bunkers",
-        "Have a family communication plan",
-        "Learn martial arts"
+        "Build a laser defense system on your roof",
+        "Construct an underground bunker with alien-proof doors",
+        "Have a family emergency meeting plan that doesn't involve telepathy",
+        "Train your pets to detect non-human lifeforms"
       ],
       correctAnswer: 2,
-      explanation: "FEMA recommends having a family communication plan so everyone knows how to contact each other and where to meet in case of separation during an emergency."
+      explanation: "FEMA actually recommends having a family communication plan so everyone knows where to meet if separated. Alien invasions, hurricanes, or just a really big sale at the mall - a meeting plan works for all!"
     },
     {
-      question: "What's the best way to stay informed during any large-scale emergency?",
+      question: "The aliens are broadcasting mind-control beams! How will you get reliable emergency information?",
       options: [
-        "Check social media",
-        "Call friends",
-        "Follow official emergency broadcasts and alerts",
-        "Look out the window"
+        "Check Twitter - alien overlords are probably verified users by now",
+        "Call your friend who believes in conspiracy theories - they've been preparing for this",
+        "Listen to boring official emergency broadcasts and alerts from authorities",
+        "Look out your window and count the number of flying saucers to gauge threat level"
       ],
       correctAnswer: 2,
-      explanation: "Official emergency broadcasts and alerts provide the most reliable information during emergencies. This applies to all disaster scenarios."
+      explanation: "Official emergency broadcasts exist for exactly these situations (well, minus the aliens part). They provide vetted information when social media is full of alien selfies and misinformation."
     }
   ]
 };
