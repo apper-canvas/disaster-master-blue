@@ -60,7 +60,7 @@ function App() {
           {/* This is the base background layer */}
           {/* Disaster-specific backgrounds are applied via the BackgroundContext */}
         </div>
-      </Router>
+      </div>
       
       <ToastContainer
         position="bottom-right"
@@ -75,7 +75,6 @@ function App() {
         theme={isDarkMode ? "dark" : "light"}
       />
     </BackgroundProvider>
-  );
   );
 }
 
