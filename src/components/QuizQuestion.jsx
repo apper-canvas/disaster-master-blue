@@ -24,7 +24,7 @@ const QuizQuestion = ({ question, options, onAnswer, questionNumber, totalQuesti
       className="w-full"
     >
       <div className="mb-6">
-      <AnimatePresence>
+        <AnimatePresence>
         {showFeedback && (
           <motion.div
             className={`fixed inset-0 z-50 flex items-center justify-center pointer-events-none`}
@@ -59,7 +59,8 @@ const QuizQuestion = ({ question, options, onAnswer, questionNumber, totalQuesti
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="mb-4 relative z-10">
+      </div>
+        <div className="mb-4 relative z-10">
           <div className="text-sm font-medium text-surface-500 dark:text-surface-400 mb-2">
               Question {questionNumber} of {totalQuestions}
           </div>
@@ -71,8 +72,8 @@ const QuizQuestion = ({ question, options, onAnswer, questionNumber, totalQuesti
               className="bg-secondary h-2.5 rounded-full transition-all duration-300 ease-in-out"
               style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
             ></div>
-          </div>
-      </div>
+           </div>
+        </div>
       <h3 className="text-xl font-bold mb-6">{question}</h3>
       
       <div className="space-y-3">
