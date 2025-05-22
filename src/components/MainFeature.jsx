@@ -1,12 +1,9 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useBackground } from '../contexts/BackgroundContext';
 import { toast } from 'react-toastify';
-const MainFeature = () => {
-  const navigate = useNavigate();
-  const { changeBackground } = useBackground();
-import { useBackground } from '../contexts/BackgroundContext';
+import ApperIcon from './ApperIcon';
 
 const disasterTypes = [
   {
@@ -15,16 +12,6 @@ const disasterTypes = [
     icon: 'Mountain',
     description: 'Test your knowledge about earthquake safety and preparedness.',
     className: 'disaster-earthquake',
-  const handleDisasterClick = (disasterId) => {
-    // Change the background based on the selected disaster
-    changeBackground(disasterId);
-    
-    // Navigate to quiz page with the selected disaster type after a short delay
-    setTimeout(() => {
-      navigate(`/quiz?type=${encodeURIComponent(disasterId)}`);
-    }, 300);
-  };
-
     bgClass: 'bg-disaster-earthquake'
   },
   {
@@ -54,22 +41,28 @@ const disasterTypes = [
   {
     id: 'alien',
     name: 'Alien Invasion',
-            onClick={() => handleDisasterClick(disaster.id)}
-            className={`disaster-card ${`disaster-${disaster.id}`} p-6 sm:p-8 text-white hover:cursor-pointer text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-light`}
+    icon: 'Zap',
+    description: 'Prepare for the unexpected with this cosmic disaster scenario.',
     className: 'disaster-alien',
     bgClass: 'bg-disaster-alien'
   }
 ];
 
-const MainFeature = ({ onDisasterSelected }) => {
+const MainFeature = () => {
   const [hoveredDisaster, setHoveredDisaster] = useState(null);
   const { changeBackground } = useBackground();
+  const navigate = useNavigate();
   
-  const handleDisasterClick = (disaster) => {
-    // Apply background effect when disaster is selected
-    changeBackground(disaster.id);
-    toast.info(`Starting ${disaster.name} challenge!`);
-    onDisasterSelected(disaster.id);
+  const handleDisasterClick = (disasterId, disasterName) => {
+    // Change the background based on the selected disaster
+    changeBackground(disasterId);
+    
+    toast.info(`Starting ${disasterName} challenge!`);
+    
+    // Navigate to quiz page with the selected disaster type after a short delay
+    setTimeout(() => {
+      navigate(`/quiz?type=${encodeURIComponent(disasterId)}`);
+    }, 300);
   };
   
   return (
@@ -93,7 +86,7 @@ const MainFeature = ({ onDisasterSelected }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.02 }}
-              onClick={() => handleDisasterClick(disaster)}
+              onClick={() => handleDisasterClick(disaster.id, disaster.name)}
               onMouseEnter={() => setHoveredDisaster(disaster.id)}
               onMouseLeave={() => setHoveredDisaster(null)}
               style={{
